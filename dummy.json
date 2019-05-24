@@ -6,8 +6,8 @@
 		  "job-template" : "<Jenkinsfile-template>",
 		  "pack.script" : "<filename>",
 		  "schemas" : [
-		  		{ "SchemaA1", "" },
-		  		{ "SchemaA2, "manifestA2" } 
+		  		{ "name" : "SchemaA1", "unl" : "" },
+		  		{ "name" : "SchemaA2", "unl" : "manifestA2" } 
 			]
 		},
 
@@ -17,9 +17,9 @@
   		"job-template" : "<Jenkinsfile-template>",
 		  "pack.script" : "<filename>",
 		  "schemas" : [ 
-		  		{ "MainSchema", "" },
-		  		{ "OtherSchema", "" }
-		  		{ "UtilSchema", "" }
+		  		{ "name" : "MainSchema", "unl" : "" },
+		  		{ "name" : "OtherSchema", "unl" : "" },
+		  		{ "name" : "UtilSchema", "unl" : "" }
 		  ]
 		}
 	]
