@@ -10,21 +10,16 @@ prods.products.each {
   pipelineJob(jobName) {
 	description( "This job builds the product ${prodName}-${prodVersion}" )
 	
-	  git{
-		  remote {
-			  url( "https://github.com/quokkaworks/automation-test.git" )
-		  }
-	  }
-	  
 	triggers {
 		cron( "H 21 * * *" )
 	}
 	  
         definition {
-    	    cps {
-        	    sandbox()
-		    script( readFileFromWorkspace( "${prodTemplate}" ).stripIndent() )
-            }
+    	    cpsScm {
+		    scm {
+			    github( "quokkaworks/automation-test.git" )
+		    }
+	    }
         }
 	  
 	disabled()
