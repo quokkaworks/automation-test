@@ -10,7 +10,7 @@ prods.products.each {
 	description( "This job builds the product ${prodName}-${prodVersion}" )
 	
 	triggers {
-		cron( "0 21 * * *" )
+		cron( "H 21 * * *" )
 	}
 	  
         definition {
