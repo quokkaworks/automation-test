@@ -3,7 +3,7 @@ def prods = new groovy.json.JsonSlurper().parseText( readFileFromWorkspace( "dum
 prods.products.each {
   def prodName = it.name
   def prodVersion = it.version
-  def prodTemplate = it.jobTemplate
+  def prodTemplatePath = "quokkaworks/automation-test/" + it.jobTemplate
   def json = groovy.json.JsonOutput.toJson( it )
   def jobName = "Worker-${prodName}-${prodVersion}".replaceAll('/','-')
   
