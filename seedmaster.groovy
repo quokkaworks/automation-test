@@ -21,5 +21,6 @@ prods.products.each {
         }
 	  
 	disabled()
+	  
     }
 }
