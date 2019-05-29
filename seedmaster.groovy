@@ -10,7 +10,7 @@ prods.products.each {
   pipelineJob(jobName) {
 	description( "This job builds the product ${prodName}-${prodVersion}" )
 	
-	github( "https://github.com/quokkaworks/automation-test.git" )
+	github( "quokkaworks/automation-test", null, "https", "github.com", null )
 	  
 	triggers {
 		cron( "H 21 * * *" )
