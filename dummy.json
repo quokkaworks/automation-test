@@ -14,7 +14,7 @@
 		{ "name" : "prod2",
 		  "version" : "1008",
 		  "description" : "The proverbial It",
-  		  "jobTemplate" : "<Jenkinsfile-template>",
+  		  "jobTemplate" : "packagetemplate.groovy",
 		  "packScript" : "<filename>",
 		  "schemas" : [ 
 		  		{ "name" : "MainSchema", "unl" : "" },
