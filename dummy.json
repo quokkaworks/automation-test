@@ -3,7 +3,7 @@
 		{ "name" : "prod1",
 		  "version" : "1.2.3",
 		  "description" : "Dummy first product",
-		  "jobTemplate" : "pacakgetemplate.groovy",
+		  "jobTemplate" : "packgetemplate.groovy",
 		  "packScript" : "<filename>",
 		  "schemas" : [
 		  		{ "name" : "SchemaA1", "unl" : "" },
