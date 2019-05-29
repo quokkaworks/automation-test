@@ -17,7 +17,7 @@ prods.products.each {
         definition {
     	    cpsScm {
 		    scm {
-			    github( "quokkaworks/automation-test.git" )
+			    github( "quokkaworks/automation-test" )
 		    }
 	    }
         }
