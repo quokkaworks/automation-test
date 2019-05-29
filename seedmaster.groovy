@@ -19,7 +19,7 @@ prods.products.each {
 		    scm {
 			    github( "quokkaworks/automation-test" )
 		    }
-		    scriptPath( prodTmeplate )
+		    scriptPath( prodTemplate )
 	    }
         }
 	  
