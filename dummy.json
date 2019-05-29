@@ -3,8 +3,8 @@
 		{ "name" : "prod1",
 		  "version" : "1.2.3",
 		  "description" : "Dummy first product",
-		  "job-template" : "pacakgetemplate.groovy",
-		  "pack.script" : "<filename>",
+		  "jobTemplate" : "pacakgetemplate.groovy",
+		  "packScript" : "<filename>",
 		  "schemas" : [
 		  		{ "name" : "SchemaA1", "unl" : "" },
 		  		{ "name" : "SchemaA2", "unl" : "manifestA2" } 
@@ -14,8 +14,8 @@
 		{ "name" : "prod2",
 		  "version" : "1008",
 		  "description" : "The proverbial It",
-  		"job-template" : "<Jenkinsfile-template>",
-		  "pack.script" : "<filename>",
+  		  "jobTemplate" : "<Jenkinsfile-template>",
+		  "packScript" : "<filename>",
 		  "schemas" : [ 
 		  		{ "name" : "MainSchema", "unl" : "" },
 		  		{ "name" : "OtherSchema", "unl" : "" },
