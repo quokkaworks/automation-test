@@ -7,12 +7,19 @@ prods.products.each {
   def jobName = "Worker-${prodName}-${prodVersion}".replaceAll('/','-')
   
   pipelineJob(jobName) {
-	    
+	description( "This job builds the product ${prodName}-${prodVersion}" )
+	
+	triggers {
+		cron( "0 21 * * *" )
+	}
+	  
         definition {
     	    cps {
         	    sandbox()
             	script( readFileFromWorkspace( "template1.dsl" ).stripIndent() )
             }
         }
+	  
+	disabled()
     }
 }
