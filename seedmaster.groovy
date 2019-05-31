@@ -10,9 +10,9 @@ prods.products.each {
   pipelineJob(jobName) {
 	description( "This job builds the product ${prodName}-${prodVersion}" )
 	
-	triggers {
-		cron( "H 21 * * *" )
-	}
+	//triggers {
+	//	cron( "H 21 * * *" )
+	//}
 	  
         definition {
     	    cpsScm {
@@ -23,6 +23,6 @@ prods.products.each {
 	    }
         }
 	  
-	disabled()
+	//disabled()
     }
 }
