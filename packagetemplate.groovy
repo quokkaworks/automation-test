@@ -9,6 +9,6 @@
 	               			bat( "echo 'Testing from within bat ..'" )
     	   				}
        					stage('Package') {
-            	   			bat( "type donothing.py" )            				
+            	   			bat( "python donothing.py" )            				
 						}
                 	}
