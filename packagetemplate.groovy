@@ -2,7 +2,8 @@
 
                 	node {
         				stage('Configure') {
-               				echo 'Building..'
+               				echo 'Chekcing out ..'
+					checkout
         				}
        					stage('Extract') {
 	               			bat( "echo 'Testing from within bat ..'" )
