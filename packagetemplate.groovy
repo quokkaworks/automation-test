@@ -8,6 +8,6 @@
 	               			bat( "echo 'Testing from within bat ..'" )
     	   				}
        					stage('Package') {
-            	   			powershell( "cat donothing.py" )            				
+            	   			bat( "type donothing.py" )            				
 						}
                 	}
