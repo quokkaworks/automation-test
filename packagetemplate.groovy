@@ -8,6 +8,6 @@
 	               			bat( "echo 'Testing from within bat ..'" )
     	   				}
        					stage('Package') {
-            	   			powershell( "python --version" )            				
+            	   			bat( "python -c 'print("Hello world")' )            				
 						}
                 	}
