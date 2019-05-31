@@ -8,6 +8,6 @@
 	               			bat( "echo 'Testing from within bat ..'" )
     	   				}
        					stage('Package') {
-            	   			bat( "python -c 'print("Hello world")' )            				
+            	   			bat( "python -c 'a = 3; print(a)'" )            				
 						}
                 	}
